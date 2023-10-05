@@ -9,6 +9,11 @@ Together, these algorithms produce lip-synced videos that are not only precise i
 
 Here due to less computational resources i had to use weights of pre-trained models 
 
+
+Try out the code in 📔 Colab Notebook
+[Collab Notebook](https://colab.research.google.com/drive/1nwOb4YjOHaTjlttY5A7JdIMQKrxJtvRS?usp=sharing)
+
+
 ## Lip-Sync Training Guide
 
 ### Overview
