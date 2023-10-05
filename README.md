@@ -9,24 +9,6 @@ Together, these algorithms produce lip-synced videos that are not only precise i
 
 Here due to less computational resources i had to use weights of pre-trained models 
 
-Lip-Sync Training Guide
-Overview
-There are two critical stages in the training process:
-
-Expert Lip-Sync Discriminator Training
-Wav2Lip Model Training
-1. Expert Lip-Sync Discriminator Training
-If you prefer to skip this step, pre-trained weights are available for download. If you're going to train it yourself:
-
-css
-Copy code
-python color_syncnet_train.py --data_root lrs2_preprocessed/ --checkpoint_dir <folder_to_save_checkpoints>
-2. Wav2Lip Model Training
-There are two training options available:
-
-a. Without the Visual Quality Discriminator (Takes approximately <1 day)
-
-
 ## Lip-Sync Training Guide
 
 ### Overview
@@ -133,7 +115,7 @@ We offer an HD model trained on a dataset suitable for commercial use. This mode
     python video2frames.py --input_video ${output_videos_wav2lip}/${filename}.mp4 --frames_path ${frames_wav2lip}/${filename}
     cd Real-ESRGAN
     python inference_realesrgan.py -n RealESRGAN_x4plus -i ${back_dir}/${frames_wav2lip}/${filename} --output ${back_dir}/${frames_hd}/${filename} --outscale 3.5 --face_enhance
-    
+
     ```
 
 
